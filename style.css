@@ -1,0 +1,256 @@
+a {
+    color: blue;
+    text-decoration: none; /* no underline */
+  }
+*{
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+    float: left;
+}
+.container{
+    width: 100%;
+}
+.add{
+    justify-content: center!important;
+    align-items: center!important;
+    display: flex!important;
+}
+body{ 
+    background-color: rgb(71, 69, 109);
+    margin: 0px;
+}
+.hlogo{
+    max-width: 40vmin;
+    position: relative;
+    top: 1vmin;
+}
+.divider{
+    position: relative;
+    top: 3vmin;
+    width: 50vmin;
+}
+.logo{
+    position: relative;
+    top: 6vmin;
+    width: 25vmin;
+    transition-duration: 0.5s;
+    border-radius: 10%;
+}
+.logo:hover{
+    cursor: pointer;
+    transform: scale(110%);
+}
+.divider2{
+    position: relative;
+    top: 10vmin;
+    width: 50vmin;
+    transform: rotate(180deg);
+}
+.desc{
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 5vmin;
+    width: 24%;
+    text-align: center;
+    position: relative;
+    top: 8vmin;
+}
+.sec1{
+    position: relative;
+    top: 10vmin;
+} 
+.colorc1{
+    background-color: rgb(71, 69, 109);
+}
+.titl1{
+    margin-top: 2vmin;
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 6vmin;
+    width: 24%;
+    text-align: center;
+}
+.divider3{
+    position: relative;
+    width: 40vmin;
+    bottom: 3vmin;
+}
+.titl2{
+    margin-top: 2vmin;
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 3.5vmin;
+    width: 80%;
+    text-align: center;
+}
+.logo1{
+    max-width: 15vmin;
+    max-height: 15vmin;
+    transition-duration: 0.5s;
+    background-color: rgb(71, 69, 109);
+    display: inline;
+    margin-bottom: 10px;
+}
+.logo1:hover{
+    cursor: pointer;
+    transform: scale(110%);
+    transform: translateY(-10%);
+}
+.desc2{
+    font-family: "Inconsolata", monospace;
+    color: white;
+    text-align: left;
+    width: 95%;
+    font-size: 2vmin;
+    display: inline;
+}
+.colorc2{
+    background-color: rgb(44, 49, 58);
+}
+.colorc3{
+    background-color: rgb(116, 112, 189);
+}
+.sec4{
+    position: relative;
+    top: 15vmin;
+}
+.mapa{
+    max-width: 40vmin;
+    margin-bottom: 3vmin;
+    border-radius: 15%;
+}
+.colorc4{
+    background-color: rgb(115, 108, 245);
+}
+.sec5{
+    position: relative;
+    top: 13vmin;
+}
+.titl4{
+    position: relative;
+    top: 2vmin;
+}
+.divider4{
+    position: relative;
+    width: 40vmin;
+    bottom: 2vmin;
+}
+.video{
+    max-width: 50vmin;
+    border-radius: 15%;
+    margin-bottom: 3vmin;
+}
+.colorc5{
+    background-color: rgb(75, 68, 216);
+}
+.sec6{
+    position:relative;
+    top: 11vmin;
+}
+.divider5{
+    position: relative;
+    width: 40vmin;
+    bottom: 2vmin;
+}
+.correo{
+    position: relative;
+    top: 4vmin;
+    max-width: 25vmin;
+    margin-bottom: 15vmin;
+    transition-duration: 0.5s;
+}
+.correo:hover{
+    transform: translateY(-10%);
+}
+@media (max-width:768px){
+    [class*="col-"]{
+        width: 100%;
+    }
+    .titl1{
+        font-size: 7vmin;
+    }
+    .titl2{
+        font-size: 6vmin;
+    }
+    .desc2{
+        font-size: 4vmin;
+    }
+    .html{
+        position:relative;
+        bottom: 30vmin;
+    }
+    .htmltext{
+        position:relative;
+        bottom: 70vmin;
+    }
+    .botds{
+        position: relative;
+        top: 100vmin;
+        z-index: 9999;
+    }
+    .ds{
+        position:relative;
+        top: 70vmin;
+        z-index: 9999;
+    }
+    .botdstext{
+        position:relative;
+        bottom: 40vmin;
+    }
+    .gen{
+        z-index: 9999;
+        position:relative;
+        top: 200vmin;
+    }
+    .pyth{
+        position: relative;
+        z-index: 9999;
+        top: 165vmin;
+    }
+    .pythtext{
+        position: relative;
+        bottom: 5vmin;
+    }
+    .desc{
+        width: 70%;
+    }
+    .mapa{
+        max-width: 40vmax;
+    }
+    .video{
+        max-width: 40vmax;
+    }
+}
+@media (width:768px){
+    .html{
+        bottom: 32vmin;
+    }
+    .ds{
+        top: 68vmin;
+    }
+    .gen{
+        top: 190vmin;
+    }
+    .pyth{
+        top: 155vmin;
+    }
+    .pythtext{
+        bottom: 8vmin;
+    }
+}
