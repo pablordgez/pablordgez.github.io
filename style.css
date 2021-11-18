@@ -208,7 +208,7 @@ body{
     }
     .html{
         position:relative;
-        bottom: 31vmin;
+        bottom: 29vmin;
     }
     .htmltext{
         position:relative;
@@ -221,7 +221,7 @@ body{
     }
     .ds{
         position:relative;
-        top: 65vmin;
+        top: 67vmin;
         z-index: 9999;
     }
     .botdstext{
