@@ -258,7 +258,7 @@ body{
 }
 @media (width:768px){
     .html{
-        bottom: 32vmin;
+        bottom: 30vmin;
     }
     .ds{
         top: 68vmin;
