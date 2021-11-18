@@ -23,6 +23,13 @@ a {
 [class*="col-"] {
     float: left;
 }
+
+* {
+    -webkit-touch-callout:none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust:none;             /* prevent webkit from resizing text to fit */
+    -webkit-tap-highlight-color:rgba(0,0,0,0); /* prevent tap highlight color / shadow */
+    -webkit-user-select:none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+}
 .container{
     width: 100%;
 }
@@ -106,11 +113,19 @@ body{
     background-color: rgb(71, 69, 109);
     display: inline;
     margin-bottom: 10px;
+    border:0; 
+    text-decoration:none; 
+    outline:none;
 }
 .logo1:hover{
     cursor: pointer;
     transform: scale(110%);
     transform: translateY(-10%);
+}
+.logo1:focus{
+    border:0; 
+    text-decoration:none; 
+    outline:none;
 }
 .desc2{
     font-family: "Inconsolata", monospace;
@@ -193,11 +208,11 @@ body{
     }
     .html{
         position:relative;
-        bottom: 30vmin;
+        bottom: 29vmin;
     }
     .htmltext{
         position:relative;
-        bottom: 70vmin;
+        bottom: 65vmin;
     }
     .botds{
         position: relative;
@@ -206,26 +221,26 @@ body{
     }
     .ds{
         position:relative;
-        top: 70vmin;
+        top: 67vmin;
         z-index: 9999;
     }
     .botdstext{
         position:relative;
-        bottom: 40vmin;
+        bottom: 36vmin;
     }
     .gen{
         z-index: 9999;
         position:relative;
-        top: 200vmin;
+        top: 190vmin;
     }
     .pyth{
         position: relative;
         z-index: 9999;
-        top: 165vmin;
+        top: 155vmin;
     }
     .pythtext{
         position: relative;
-        bottom: 5vmin;
+        bottom: 4vmin;
     }
     .desc{
         width: 70%;
@@ -235,6 +250,10 @@ body{
     }
     .video{
         max-width: 40vmax;
+    }
+    .lihtml{
+        position: relative;
+        bottom: 250vmin;
     }
 }
 @media (width:768px){
