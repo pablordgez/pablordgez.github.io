@@ -1,276 +1,219 @@
-a {
-    color: blue;
-    text-decoration: none; /* no underline */
-  }
-*{
-    box-sizing: border-box;
-}
-::-webkit-scrollbar {
-    display: none;
-}
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-[class*="col-"] {
-    float: left;
-}
-
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     -webkit-touch-callout:none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust:none;             /* prevent webkit from resizing text to fit */
     -webkit-tap-highlight-color:rgba(0,0,0,0); /* prevent tap highlight color / shadow */
     -webkit-user-select:none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
 }
-.container{
-    width: 100%;
+::-webkit-scrollbar {
+    display: none;
 }
-.add{
-    justify-content: center!important;
-    align-items: center!important;
-    display: flex!important;
+body{
+    font-size: 16px;
+    background-color: rgb(44, 49, 58);
 }
-body{ 
-    background-color: rgb(71, 69, 109);
-    margin: 0px;
+a{
+    text-decoration: none;
+    width: min-content;
+    margin: 0 auto;
 }
-.hlogo{
-    max-width: 40vmin;
-    position: relative;
-    top: 1vmin;
-}
-.divider{
-    position: relative;
-    top: 3vmin;
-    width: 50vmin;
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 85vh;
 }
 .logo{
-    position: relative;
-    top: 6vmin;
-    width: 25vmin;
-    transition-duration: 0.5s;
-    border-radius: 10%;
+    width: 35em;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    transition-duration: 0.25s;
 }
 .logo:hover{
-    cursor: pointer;
+    transform: translateY(-10%);
+}
+.divider, .divider2{
+    width: 40em;
+    margin: 0 auto;
+}
+.logo2{
+    width: 20em;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border-radius: 10%;
+    transition-duration: 0.5s;
+}
+.logo2:hover{
     transform: scale(110%);
 }
 .divider2{
-    position: relative;
-    top: 10vmin;
-    width: 50vmin;
     transform: rotate(180deg);
+    margin-bottom: 2em;
 }
-.desc{
-    font-family: 'VT323', monospace;
-    color: white;
-    font-size: 5vmin;
-    width: 24%;
+header h2{
     text-align: center;
-    position: relative;
-    top: 8vmin;
+    font-family: 'VT323', monospace;
+    font-size: 4em;
+    color: white;
+    width: 100%;
+    margin-bottom: 10vh;
+}
+main{
+    background-color: rgb(71, 69, 109);
+    height: max-content;
+    padding-bottom: 5em;
+}
+section h2{
+    text-align: center;
+    color: white;
+    font-family: "VT323", monospace;
+    font-size: 5em;
+    padding-top: 10vh
+}
+section .divider{
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 4em;
 }
 .sec1{
-    position: relative;
-    top: 10vmin;
-} 
-.colorc1{
+    display: grid;
+    gap: 4em;
+    grid-auto-flow: dense;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    justify-content: center;
+    text-align: center;
     background-color: rgb(71, 69, 109);
 }
-.titl1{
-    margin-top: 2vmin;
-    font-family: 'VT323', monospace;
-    color: white;
-    font-size: 6vmin;
-    width: 24%;
-    text-align: center;
+section h3{
+    font-size: 3em;
+    color:white;
+    font-family: "VT323", monospace;
 }
-.divider3{
-    position: relative;
-    width: 40vmin;
-    bottom: 3vmin;
-}
-.titl2{
-    margin-top: 2vmin;
-    font-family: 'VT323', monospace;
-    color: white;
-    font-size: 3.5vmin;
-    width: 80%;
-    text-align: center;
-}
-.logo1{
-    max-width: 15vmin;
-    max-height: 15vmin;
+.logoapp{
+    max-width: 25%;
+    margin-top: 3vh;
     transition-duration: 0.5s;
-    background-color: rgb(71, 69, 109);
-    display: inline;
-    margin-bottom: 10px;
-    border:0; 
-    text-decoration:none; 
-    outline:none;
 }
-.logo1:hover{
-    cursor: pointer;
-    transform: scale(110%);
-    transform: translateY(-10%);
+.logoapp:hover{
+    transform: translateY(-5%) scale(110%);
 }
-.logo1:focus{
-    border:0; 
-    text-decoration:none; 
-    outline:none;
-}
-.desc2{
-    font-family: "Inconsolata", monospace;
-    color: white;
+section p{
     text-align: left;
-    width: 95%;
-    font-size: 2vmin;
-    display: inline;
+    width: 80%;
+    margin-left: 2em;
+    margin-top: 2em;
+    color: white;
+    font-size: 2em;
+    font-family: "Inconsolata", monospace;
+    
 }
-.colorc2{
-    background-color: rgb(44, 49, 58);
-}
-.colorc3{
+.cestudios{
     background-color: rgb(116, 112, 189);
+    height: 70vh;
 }
-.sec4{
-    position: relative;
-    top: 15vmin;
+.cestudios div, .videor div{
+    text-align: center;
 }
-.mapa{
-    max-width: 40vmin;
-    margin-bottom: 3vmin;
+.mapa, .video{
     border-radius: 15%;
+    height: 30em;
+    width: 30em;
+    object-fit: cover;
 }
-.colorc4{
+.videor{
     background-color: rgb(115, 108, 245);
-}
-.sec5{
-    position: relative;
-    top: 13vmin;
-}
-.titl4{
-    position: relative;
-    top: 2vmin;
-width:50%;
-}
-.divider4{
-    position: relative;
-    width: 40vmin;
-    bottom: 2vmin;
-}
-.video{
-    max-width: 50vmin;
-    border-radius: 15%;
-    margin-bottom: 3vmin;
-}
-.colorc5{
-    background-color: rgb(75, 68, 216);
-}
-.sec6{
-    position:relative;
-    top: 11vmin;
-}
-.divider5{
-    position: relative;
-    width: 40vmin;
-    bottom: 2vmin;
+    height: 70vh;
 }
 .correo{
-    position: relative;
-    top: 4vmin;
-    max-width: 25vmin;
-    margin-bottom: 15vmin;
-    transition-duration: 0.5s;
+    width: 25em;
+    transition-duration: 0.75s;
 }
 .correo:hover{
-    transform: translateY(-10%);
+    transform: translateY(-10%) rotate(10deg);
 }
-@media (max-width:768px){
-    [class*="col-"]{
-        width: 100%;
+.contacto{
+    background-color: rgb(75, 68, 216);
+    height: 60vh;
+}
+.contacto div{
+    text-align: center;
+}
+/* font-family: 'VT323', monospace;
+   font-family: "Inconsolata", monospace;
+   #309130
+   #FFFFFF
+   #0075CA
+   #A07D51
+   #000000 */
+
+@media (max-width: 768px){
+    body{
+        font-size: 12px;
     }
-    .titl1{
-        font-size: 7vmin;
+    main{
+        height: max-content;
     }
-    .titl2{
-        font-size: 6vmin;
+    .sec1{
+        grid-template-columns: 1fr;
+        grid-auto-rows: max-content;
     }
-    .desc2{
-        font-size: 4vmin;
+    .divider, .divider2{
+        width: 30em;
     }
-    .html{
-        position:relative;
-        bottom: 29vmin;
+    section div{
+        margin-bottom: 5vh;
     }
-    .htmltext{
-        position:relative;
-        bottom: 65vmin;
+    section h3{
+        width: 80%;
+        margin: 0 auto;
     }
-    .botds{
-        position: relative;
-        top: 100vmin;
-        z-index: 9999;
-    }
-    .ds{
-        position:relative;
-        top: 67vmin;
-        z-index: 9999;
-    }
-    .botdstext{
-        position:relative;
-        bottom: 36vmin;
-    }
-    .gen{
-        z-index: 9999;
-        position:relative;
-        top: 190vmin;
-    }
-    .pyth{
-        position: relative;
-        z-index: 9999;
-        top: 155vmin;
-    }
-    .pythtext{
-        position: relative;
-        bottom: 4vmin;
-    }
-    .desc{
-        width: 70%;
-    }
-    .mapa{
-        max-width: 40vmax;
-    }
-    .video{
-        max-width: 40vmax;
-    }
-    .lihtml{
-        position: relative;
-        bottom: 250vmin;
+    section p{
+        width: 90%;
+        margin-left: 1.5em;
     }
 }
-@media (width:768px){
-    .html{
-        bottom: 30vmin;
+@media (max-height: 1220px){
+    body{
+        font-size: 12px;
     }
-    .ds{
-        top: 68vmin;
+}
+@media (max-height: 900px){
+    body{
+        font-size: 10px;
     }
-    .gen{
-        top: 190vmin;
+}
+@media (max-height: 720px){
+    body{
+        font-size: 8px;
     }
-    .pyth{
-        top: 155vmin;
+}
+@media (max-height: 590px){
+    body{
+        font-size: 7px;
     }
-    .pythtext{
-        bottom: 8vmin;
+}
+@media (max-height: 490px){
+    body{
+        font-size: 6px;
+    }
+}
+@media (max-height: 420px){
+    body{
+        font-size: 5px;
+    }
+}
+@media (max-height: 345px){
+    body{
+        font-size: 4px;
+    }
+}
+@media (max-height: 275px){
+    body{
+        font-size: 3px;
     }
 }
