@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +29,7 @@
             <img class="divider" src="img/divider.png">
         </section>
         <section class="sec1">
-            <div>
+            <div data-aos="fade-up">
                 <h3>Juego HTML "¿Cuál es más caro?"</h3>
                 <a href="http://194.163.177.132/" target="_blank"><img class="logoapp" src="img/html.png"></a>
                 <p>Juego basado en HTML y disponible a través de Internet.<br><br>El objetivo del juego es hacer la mayor racha posible acertando cúal de los dos objetos mostrados es más caro. Utiliza HTML, CSS y JavaScript.
@@ -36,7 +37,7 @@
                         la puntuación, el seleccionar dos objetos y sus imágenes, sus precios, y muchas más cosas, funcionan con JavaScript. Se puede acceder a la página haciendo click en la imagen de arriba.
                 </p>
             </div>
-            <div>
+            <div data-aos="fade-up">
                 <h3>Bot de Discord: "El taquillero"</h3>
                 <a href="https://discord.com/api/oauth2/authorize?client_id=906608265876602941&permissions=380104723456&scope=bot" target="_blank"><img class="logoapp" src="img/discord.png"></a>
                 <p>Bot para el servicio de chat Discord.<br><br>Este bot, basado en Python, utiliza dos librerías. Una le permite conectarse a Discord y usar sus funciones, y otra extraer información de IMDb. Mediante dos comandos, puede buscar
@@ -44,7 +45,7 @@
                     de otras librerías. Se puede añadir el bot a un servidor de Discord haciendo click en la imagen de arriba.
                 </p>
             </div>
-            <div>
+            <div data-aos="fade-up">
                 <h3>Generador de malas traducciones</h3>
                 <a href="https://github.com/pablordgez/TranslatorMesser" target="_blank"><img class="logoapp" src="img/python.png"></a>
                 <p>Programa basado en Python que, aunque no tiene ninguna función realmente práctica, me parece interesante.<br><br>Usa una librería para conectarse al traductor de Google, le pide al usuario indicar si va a usar el programa en inglés
@@ -55,7 +56,7 @@
         </section>
     </main>
     <article class="cestudios">
-        <section>
+        <section data-aos="fade-up">
             <h2>Centro de estudios</h2>
             <img class="divider" src="img/divider.png">
             <div>
@@ -64,7 +65,7 @@
         </section>
     </article>
     <article class="videor">
-        <section>
+        <section data-aos="fade-up">
             <h2>Vídeo recomendado</h2>
             <img class="divider" src="img/divider.png">
             <div>
@@ -73,7 +74,7 @@
         </section>
     </article>
     <article class="contacto">
-        <section>
+        <section data-aos="fade-up">
             <h2>Contacto</h2>
             <img class="divider" src="img/divider.png">
             <div>
@@ -81,5 +82,11 @@
             </div>
         </section>
     </article>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          delay: 300
+      });
+    </script>
 </body>
 </html>

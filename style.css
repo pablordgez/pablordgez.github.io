@@ -175,6 +175,7 @@ section p{
     section p{
         width: 90%;
         margin-left: 1.5em;
+        margin-right: 1.5em;
     }
 }
 @media (max-height: 1220px){
