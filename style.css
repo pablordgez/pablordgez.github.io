@@ -102,6 +102,9 @@ section h3{
 .logoapp:hover{
     transform: translateY(-5%) scale(110%);
 }
+.lcs{
+    margin-top: 8vh;
+}
 section p{
     text-align: left;
     width: 80%;
@@ -116,18 +119,14 @@ section p{
     background-color: rgb(116, 112, 189);
     height: 70vh;
 }
-.cestudios div, .videor div{
+.cestudios div{
     text-align: center;
 }
-.mapa, .video{
+.mapa{
     border-radius: 15%;
     height: 30em;
     width: 30em;
     object-fit: cover;
-}
-.videor{
-    background-color: rgb(115, 108, 245);
-    height: 70vh;
 }
 .correo{
     width: 25em;
